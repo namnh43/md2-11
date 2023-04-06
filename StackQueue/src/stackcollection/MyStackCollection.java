@@ -1,5 +1,6 @@
 package stackcollection;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Stack;
 
@@ -12,7 +13,8 @@ public class MyStackCollection {
     }
     public void rotatedArray() {
         for(int i: array) {
-            myIntegerStack.add(i);
+//            myIntegerStack.add(i);
+            myIntegerStack.push(i);
         }
         for (int index = 0; index < array.length; index ++) {
             array[index] = myIntegerStack.pop();
